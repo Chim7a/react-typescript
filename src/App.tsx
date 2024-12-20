@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import UserCard from "./UserCard";
+// import Car from "./example";
 
 interface productInfoItem {
   productName: string;
@@ -11,7 +12,7 @@ interface productInfoItem {
 
 function App() {
   const [count, setCount] = useState<number>(0);
-  const [firstName, setFirstName] = useState<string | null>(null);
+  // const [firstName, setFirstName] = useState<string | null>(null);
   const [productInfo, setProductInfo] = useState<productInfoItem>({
     productName: "Apple",
     productPrice: 2000,
@@ -44,6 +45,7 @@ function App() {
         marital_stat="Single"
         contactInfo={{ address: "Wuse", city: "Lagos", country: "Nigeria" }}
       />
+      {/* <Car /> */}
     </>
   );
 }

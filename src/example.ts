@@ -1,4 +1,4 @@
-class Car {
+export default class Car {
   car_id: number;
   car_name: string;
   car_price: number;
@@ -28,7 +28,13 @@ const TeslaCar = new Car(788, "Tesla", 7000, true, 4, [
   "Bad breaks",
 ]);
 
+console.log(TeslaCar.car_price);
+
 // This function is expecting any data type and returning any type. T represents anything.
 function acceptAnything<T>(value: T): T {
   return value;
 }
+
+console.log("hello " + acceptAnything(2));
+
+// export default Car;
